@@ -1,9 +1,11 @@
 import "./App.scss";
+import Lateral from "../components/Lateral/Lateral";
 
 function App() {
    return (
-      <div>
-         <div className="App">HELLO WORLD</div>
+      <div className="AppWrapper">
+         <Lateral />
+         {/* <Board /> */}
       </div>
    );
 }

@@ -1,0 +1,24 @@
+.LateralWrapper {
+   color: white;
+   width: 120px;
+   min-height: 934px;
+   background-color: black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.LateralButtons {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 315px;
+}
+
+.LateralCopyright {
+   text-wrap: nowrap;
+   font-weight: 500;
+   font-size: 12px;
+   rotate: 270deg;
+}
