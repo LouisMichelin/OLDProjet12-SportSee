@@ -1,10 +1,13 @@
+import Welcome from "../Welcome/Welcome";
 import "./Dashboard.scss";
 
+// import workingOnNewChapter from "../GetData/TestFile";
+
 function Dashboard() {
+   // workingOnNewChapter();
    return (
       <div className="DashboardWrapper">
-         <div>DASHBOARD</div>
-         <div>BABYYYYYYYYY</div>
+         <Welcome userId={12} />
       </div>
    );
 }
