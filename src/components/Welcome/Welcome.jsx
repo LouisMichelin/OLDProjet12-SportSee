@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Welcome.scss";
 
-export default function GetData({ userId }) {
+function Welcome({ userId }) {
    const [data, setData] = useState(null);
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
@@ -46,3 +46,5 @@ export default function GetData({ userId }) {
       </div>
    );
 }
+
+export default Welcome;
