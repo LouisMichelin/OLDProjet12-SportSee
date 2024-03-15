@@ -1,0 +1,33 @@
+.HeaderWrapper {
+   height: 90px;
+   width: 100%;
+   background-color: black;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.HeaderLogo {
+   height: calc(100% - 30px);
+   margin: 15px 50px 15px 30px;
+   // background-color: yellow;
+}
+
+.NavContainer {
+   width: 100%;
+   // background-color: green;
+   display: flex;
+   flex-direction: row;
+
+   justify-content: space-evenly;
+   // align-items: center;
+}
+
+.NavLink {
+   color: white;
+   font-size: 24px;
+   font-weight: 500;
+   // background-color: orange;
+   // margin: 0px 75px;
+}
