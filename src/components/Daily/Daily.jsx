@@ -129,7 +129,7 @@ function Daily({ userId }) {
                   height={300}
                   data={data}
                   margin={{
-                     top: 5,
+                     top: 30,
                      right: 10,
                      left: 40,
                      bottom: 5,
