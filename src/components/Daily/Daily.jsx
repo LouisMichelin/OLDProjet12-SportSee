@@ -63,8 +63,50 @@ function Daily({ userId }) {
       },
       {
          day: 3,
-         poids: 80,
+         poids: 75,
          calories: 280,
+         // amt: 75,
+      },
+      {
+         day: 4,
+         poids: 70,
+         calories: 200,
+         // amt: 75,
+      },
+      {
+         day: 5,
+         poids: 65,
+         calories: 150,
+         // amt: 75,
+      },
+      {
+         day: 6,
+         poids: 65,
+         calories: 300,
+         // amt: 75,
+      },
+      {
+         day: 7,
+         poids: 70,
+         calories: 200,
+         // amt: 75,
+      },
+      {
+         day: 8,
+         poids: 65,
+         calories: 150,
+         // amt: 75,
+      },
+      {
+         day: 9,
+         poids: 65,
+         calories: 300,
+         // amt: 75,
+      },
+      {
+         day: 10,
+         poids: 65,
+         calories: 300,
          // amt: 75,
       },
    ];
@@ -81,15 +123,15 @@ function Daily({ userId }) {
             })} */}
 
             {/* <Bar className="DailyBar" data={barData} /> */}
-            <ResponsiveContainer width={765} height={185}>
+            <ResponsiveContainer width="100%" height="100%">
                <BarChart
-                  width={500}
+                  width={700}
                   height={300}
                   data={data}
                   margin={{
                      top: 5,
-                     right: 30,
-                     left: 20,
+                     right: 10,
+                     left: 40,
                      bottom: 5,
                   }}
                >
@@ -102,7 +144,11 @@ function Daily({ userId }) {
                   />
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="day" />
-                  <YAxis type="number" domain={[0, 500]} />
+                  <YAxis
+                     orientation="right"
+                     type="number"
+                     domain={[0, "auto"]}
+                  />
                   <Tooltip />
                   <Bar
                      dataKey="poids"
