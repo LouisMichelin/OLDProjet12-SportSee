@@ -31,9 +31,6 @@ function Welcome({ userId }) {
 
    const userData = data.data;
    const userFirstname = userData.userInfos.firstName;
-   // const userLastname = userData.userInfos.lastName;
-   // const userAge = userData.userInfos.age;
-   console.log(userData.userInfos.firstName);
 
    return (
       <div className="WelcomeWrapper">

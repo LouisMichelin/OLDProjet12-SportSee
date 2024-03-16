@@ -1,18 +1,21 @@
 import Welcome from "../Welcome/Welcome";
 import "./Dashboard.scss";
 import Daily from "../Daily/Daily";
-
-// import workingOnNewChapter from "../GetData/TestFile";
+// import functionGetApi from "../../service/functionGet";
+// import { useState, useEffect } from "react";
 
 function Dashboard() {
-   // workingOnNewChapter();
    return (
       <div className="DashboardWrapper">
+         <div></div>
          <Welcome userId={12} />
          <div style={{ display: "flex", flexDirection: "row" }}>
             <div>
-               <Daily />
-               <div
+               <div>
+                  <Daily userId={12} />
+               </div>
+
+               {/* <div
                   style={{
                      display: "flex",
                      flexDirection: "row",
@@ -41,20 +44,15 @@ function Dashboard() {
                         backgroundColor: "yellow",
                      }}
                   ></div>
-               </div>
+               </div> */}
             </div>
-            <div
+            {/* <div
                style={{
                   backgroundColor: "cyan",
                   width: "260px",
                   marginLeft: "30px",
                }}
-            >
-               {/* <div></div>
-               <div></div>
-               <div></div>
-               <div></div> */}
-            </div>
+            ></div> */}
          </div>
       </div>
    );
