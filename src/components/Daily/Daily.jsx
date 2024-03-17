@@ -124,7 +124,20 @@ function Daily({ userId }) {
       });
    });
 
-   console.log("graphdata = ", graphData);
+   // console.log("graphdata = ", graphData);
+
+   // function renderTooltip() {
+   //    return (
+   //       <div
+   //          dataKey="Poids (kg)"
+   //          data={graphData}
+   //          style={{ backgroundColor: "red", color: "#ffffff" }}
+   //       >
+   //          <div>test</div>
+   //          <div>{}</div>
+   //       </div>
+   //    );
+   // }
 
    return (
       <div className="DailyWrapper">
@@ -159,7 +172,11 @@ function Daily({ userId }) {
                      interval={1}
                      // dataKey="Poids (kg)"
                   />
-                  <Tooltip />
+                  <Tooltip
+                     contentStyle={{ backgroundColor: "red" }}
+                     itemStyle={{ color: "#ffffff" }}
+                     // content={renderTooltip()}
+                  />
                   <Bar
                      dataKey="Poids (kg)"
                      fill="black"
